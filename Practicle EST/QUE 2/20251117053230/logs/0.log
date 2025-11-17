@@ -1,0 +1,52 @@
+2025-11-17T05:32:30.530Z [INFO] ----------------------invoke generate_upgrade_plan----------------------
+2025-11-17T05:32:30.531Z [INFO] [Tool.invoke]({name: generate_upgrade_plan, input: {
+  "projectPath": "e:/Fullstack/External/Q4/spring-annotations-demo",
+  "targetJavaVersion": "21"
+}}).
+2025-11-17T05:32:30.531Z [INFO] [Plan.tryStartTask]({tool:generate_upgrade_plan, nextTask:{type:undefined, tool:undefined}}
+2025-11-17T05:32:30.532Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2025-11-17T05:32:30.532Z [INFO] [Plan.createTaskAtStart]({tool: generate_upgrade_plan, input: {
+  "projectPath": "e:/Fullstack/External/Q4/spring-annotations-demo",
+  "targetJavaVersion": "21",
+  "sessionId": "20251117053230"
+}}).
+2025-11-17T05:32:30.532Z [INFO] [Plan.tryStartTask]: starting task generatePlan
+2025-11-17T05:32:30.566Z [INFO] [Task.start](): Starting task generatePlan
+2025-11-17T05:32:30.568Z [INFO] [Task.start](1): Started task generatePlan
+2025-11-17T05:32:30.575Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2025-11-17T05:32:31.228Z [INFO] Copilot user info:{
+  "access_type_sku": "free_limited_copilot",
+  "analytics_tracking_id": "972ee3e94a3d17a2669e0534780b6da3",
+  "assigned_date": "2025-06-21T16:00:57+05:30",
+  "can_signup_for_limited": false,
+  "chat_enabled": true,
+  "copilot_plan": "individual",
+  "organization_login_list": [],
+  "organization_list": [],
+  "limited_user_quotas": {
+    "chat": 410,
+    "completions": 4000
+  },
+  "limited_user_subscribed_day": 21,
+  "limited_user_reset_date": "2025-11-21",
+  "monthly_quotas": {
+    "chat": 500,
+    "completions": 4000
+  }
+}
+2025-11-17T05:32:31.229Z [WARN] "GitHub Copilot app modernization - upgrade for Java" and its tools are only available for GitHub Copilot "Pro", "Pro+", "Business" and "Enterprise" plans.
+2025-11-17T05:32:31.229Z [ERROR] [Tool.invoke] error occurs when invoking tool generate_upgrade_plan: UnsupportedCopilotPlanError: "GitHub Copilot app modernization - upgrade for Java" and its tools are only available for GitHub Copilot "Pro", "Pro+", "Business" and "Enterprise" plans.. Please upgrade your GitHub Copilot plan to use this feature or upgrading this project using other tools you prefer..
+2025-11-17T05:32:31.230Z [INFO] [Task.complete](1): Completing task generatePlan
+2025-11-17T05:32:31.231Z [INFO] ----------------------invoked generate_upgrade_plan----------------------
+2025-11-17T05:32:31.231Z [INFO] [Task.complete](1): Completed task generatePlan
+2025-11-17T05:34:45.328Z [INFO] ---------------------prepare build_java_project----------------------
+2025-11-17T05:34:45.328Z [INFO] [Tool.prepareInvocation]({name: build_java_project, input: {
+  "projectPath": "e:/Fullstack/External/Q4/spring-annotations-demo",
+  "codeChangesMessage": "Upgrade Java to 21: set java.version and compiler plugin",
+  "codeChangesDetails": "- Update `<java.version>` to `21`\n- Add `maven-compiler-plugin` with `<release>21</release>` to ensure compilation target is Java 21"
+}}).
+2025-11-17T05:34:45.329Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2025-11-17T05:34:45.329Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Build project"
+}}).
+2025-11-17T05:34:45.329Z [INFO] ----------------------prepared build_java_project----------------------
